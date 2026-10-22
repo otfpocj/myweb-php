@@ -1,11 +1,12 @@
 <?php
 echo "<h1>กำลังทดสอบเชื่อมต่อฐานข้อมูล...</h1>";
 
-$host = "aws-0-ap-northeast-1.pooler.supabase.com";
+// ใช้การเชื่อมต่อแบบ Direct เข้า Supabase โดยตรง (ตัดปัญหาเรื่อง Tenant User ของ Pooler)
+$host = "db.oemjlrwnbeaslblmfgqy.supabase.co";
 $port = "5432";
 $dbname = "postgres";
-$user = "postgres.oemjlrwnbeaslblmfgqy";
-$password = "@Stu365771319800624924"; // <-- เปลี่ยนตรงนี้เป็นรหัสผ่าน Supabase ของคุณ
+$user = "postgres";
+$password = "@Stu365771319800624924"; // <-- เปลี่ยนตรงนี้เป็นรหัสผ่านจริงของคุณ
 
 try {
     $dsn = "pgsql:host=$host;port=$port;dbname=$dbname";

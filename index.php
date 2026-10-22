@@ -1,7 +1,6 @@
 <?php
 echo "<h1>กำลังทดสอบเชื่อมต่อฐานข้อมูล...</h1>";
 
-// ใช้การเชื่อมต่อแบบ Direct เข้า Supabase โดยตรง (ตัดปัญหาเรื่อง Tenant User ของ Pooler)
 $host = "db.oemjlrwnbeaslblmfgqy.supabase.co";
 $port = "5432";
 $dbname = "postgres";
